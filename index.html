@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    <title>Survey Form</title>
+</head>
+<body>
+    <form class="form" action="none">
+        <h1 class="h1">Survey Form</h1>
+        <div class="form__content">
+            <div class="form__heading">
+                <p>
+                    <h2 class="h2">
+                    Let us know how we can improve Codesting
+                    </h2>
+                </p>
+            </div>
+            <div class="form__name row">
+                <div class="col-1-of-2">
+                    <label for="name" class="form__name-name">&ast; Name</label>
+                </div>
+                <div class="col-1-of-2">
+                    <input type="text" class="form__name-input" placeholder="Enter your name">
+                    
+                </div>
+            </div>
+            <div class="form__email row">
+                <div class="col-1-of-2">
+                    <label for="email" class="form__email-email">&ast; Email</label>
+                </div>
+                <div class="col-1-of-2">
+                    <input type="text" class="form__email-input" placeholder="Enter your email">
+                </div>
+            </div>
+            <div class="form__age row">
+                <div class="col-1-of-2">
+                    <label for="age" class="form__age-age">&ast; Age</label>
+                </div>
+                <div class="col-1-of-2">
+                    <input type="number" class="form__age-input" placeholder="Age" min="10" max="160">
+                </div>
+            </div>
+            <div class="form__role row">
+                <div class="col-1-of-2">
+                    <label for="role" class="form__role-role">
+                       <p> Which option best describes your curernt role?</p>
+                    </label>
+                </div>
+                <div class="col-1-of-2">
+                    <select name="role" id="role" class="form__role-select">
+                        <option value="student" selected>Student</option>
+                        <option value="teacher">Teacher</option>
+                        <option value="parent">Parent</option>
+                    </select>
+                </div>
+            </div>
+            <div class="form__recommend row">
+                    <div class="col-1-of-2">
+                        <div class="form__recommend-p">
+                            <p>&ast;How likely is it that you would recommend <br>
+                                Codesting to a friend?
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2 form__recommend-input">
+                        <input type="radio" id="definitely" name="recommend" value="definitely">
+                        <label for="definitely">Definitety</label><br>
+                        <input type="radio" id="maybe" name="recommend" value="maybe">
+                        <label for="maybe">Maybe</label><br>
+                        <input type="radio" id="not-sure" name="recommend" value="not-sure">
+                        <label for="not-sure">Not Sure</label><br>
+                    </div>
+            </div>
+            <div class="form__like">
+                <div class="row">
+                    <div class="col-1-of-2">
+                        <div class="form__like-prompt">
+                            <p>What do you like most about Codesting?</p>
+                        </div>
+                    </div>
+                    <div class="col-1-of-2">
+                        <div class="form__like-options">
+                            <select name="like-options" id="like-options">
+                                <option value="lessons" selected>Lessons</option>
+                                <option value="articles">Articles</option>
+                                <option value="code_examples">Code Examples</option>
+                                <option value="select" selected disabled>Select an option</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="form__improvements row">
+                <div class="col-1-of-2">
+                    <div class="form__improvements-prompt">
+                        <p>Things that should be improved in the future <br> (Check all that apply)
+                        </p>
+                    </div>
+                </div>
+                <div class="col-1-of-2 form__improvements-options">
+                            <input type="checkbox" id="front-end" name="front-end">
+                            <label for="front-end">Front-end Projects</label><br>
+                            <input type="checkbox" id="back-end" name="back-end">
+                            <label for="back-end">Back-end Projects</label><br>
+                            <input type="checkbox" id="data-visualization" name="data-visualization">
+                            <label for="data-visualization">Data Visualization</label><br>
+                </div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>
